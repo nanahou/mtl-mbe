@@ -83,7 +83,7 @@
               The prior work mostly performs bandwidth extension under ideal conditions, which assumes that the narrowband signals are clean without noise. 
               Without addressing the noise issue, ideal bandwidth extension techniques are greatly limited in real-world applications. 
               A typical way to address the noise problem is to perform speech enhancement on the noisy narrowband signal first (Step 1), and ideal bandwidth extension next (Step 2). </p>
-              <img id="img1" src="./img/noise-robust-1motivation_1.svg" class="img-fluid" style="width:100%"
+              <img id="img1" src="./img/noise-robust-1motivation_1.svg" class="img-fluid" style="width:70%"
               alt="Monolingual PPG system framework">
             <figcaption class="figure-caption text-center">
               Figure1. The work flow of noise-robust bandwidth extension. In Step 1, the noisy-narrowband signal is enhanced to remove noise. 
@@ -94,56 +94,23 @@
       <hr>
       <div class="row" id="monolingual">
         <div class="col">
-          <h2>Monolingual PPG VC (Baseline)</h2>
+          <h2>Multi-task Learning for Mask-based Noise-robust Bandwidth Extension (MTL-MBE)</h2>
           <div>
-            <p>Phonetic PosteriorGram (PPG) is a time-versus-class vector that represents the posterior probabilities of
-              phonetic
-              classes for a specific time frame. Due to PPG's speaker-independent and languageindependent properties,
-              they have
-              been successfully applied for cross-lingual voice conversion<a class="text-success" href="#1">[1]</a>.
-              The training and conversion stages are shown as below: </p>
-            <img id="img1" src="./img/baseline.svg" class="img-fluid" style="width:100%"
+            <p> we propose an end-to-end time-domain framework for noise-robust bandwidth extension, 
+              which is achieved by jointly optimizing mask-based speech enhancement and ideal bandwidth extension modules with a multi-task learning (MTL-MBE). 
+              As a time-domain technique, the proposed method inherently avoids phase estimation issues. <a class="text-success" href="#1">[1]</a>.
+              The MTL-MBE framework are shown as below: </p>
+            <img id="img1" src="./img/noise-robust-2framework_1.svg" class="img-fluid" style="width:70%"
               alt="Monolingual PPG system framework">
             <figcaption class="figure-caption text-center">
-              Figure1. Block diagram of (a) training and (b) conversion workflows of the cross-lingual VC system with
-              monolingual PPGs.
+              Figure2. The block diagram of (a) frequency-domain noise-robust bandwidth extension, 
+              (b) time-domain noise-robust bandwidth extension, (c) time-domain mask-based noise-robust bandwidth extension (MBE), 
+              and (d) time-domain mask-based noise-robust bandwidth extension with multi-task learning (MTL-MBE). 
           </div>
         </div>
       </div>
       <hr>
-      <div class="row" id="bilingual">
-        <div class="col">
-          <h2>Bilingual PPG VC (Baseline)</h2>
-          <div>
-            <p>To capture accurate phonetic information of both source and target languages, bilingual PPGs are
-              introduced to represent
-              the speaker-independent features of speech signals from different languages in the same feature space. In
-              particular, a
-              bilingual PPG is formed by stacking two monolingual PPG vectors, which are extracted from two monolingual
-              speech recognition systems.
-            </p>
-            <img id="img2" src="./img/bilingual.svg" class="img-fluid" style="width:100%"
-              alt="Bilingual PPG system framework with average modeling">
-            <figcaption class="figure-caption text-center">
-              Figure2. Block diagram of (a) training and (b) conversion workflows of the cross-lingual VC system with
-              bilingual PPGs.
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="row" id="average">
-        <div class="col">
-          <h2>Average Modeling Approach with Bilingual PPG (Proposed)</h2>
-          <div>
-            <p>To further enhance the quality of converted speech, we proposed an average modeling approach<a
-                class="text-success" href="#2">[2]</a>, which
-              utilizes acoustic and linguistic information from many speakers in both source and target languages for
-              average model training. Additional
-              i-vectors are concatenated with bilingual PPGs to represent speaker indentities.</p>
-          </div>
-        </div>
-      </div>
-      <hr>
+      
       <div class="row" id="result">
         <div class="col-md-12">
           <h2>Speech Samples</h2>
