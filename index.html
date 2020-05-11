@@ -99,7 +99,7 @@
             <p> We propose an end-to-end time-domain framework for noise-robust bandwidth extension, 
               which is achieved by jointly optimizing mask-based speech enhancement and ideal bandwidth extension modules with a multi-task learning (MTL-MBE). 
               As a time-domain technique, the proposed method inherently avoids phase estimation issues.
-              The MTL-MBE framework are shown as below: </p>
+              The MTL-MBE framework is shown as below: </p>
             <img id="img1" src="./img/noise-robust-2framework_1.svg" class="img-fluid" style="width:40%"
               alt="Monolingual PPG system framework">
             <figcaption class="figure-caption text-center">
@@ -114,16 +114,13 @@
       <div class="row" id="result">
         <div class="col-md-12">
           <h2>Speech Samples</h2>
-          <p>The model is evaluated with speech from the following database:<p>
-              <p>public dataset by Valentini et al.<a class="text-success" href="#3">[2]</a>
-                <p>
-                  <p></p>
+          <p>The model is evaluated with speech from the public dataset by Valentini et al.<a class="text-success" href="#3">[2]</a><p>
                   <div class="big-screen">
                     <table class="table">
                       <thead>
                         <tr>
                           <th></th>
-                          <th>Noisy Narrowbandth>
+                          <th>Noisy Narrowband</p>th>
                           <th>UEE Baseline</th>
                           <th>Proposed MTL-MBE</th>
                           <th>Clean Wideband</th>
@@ -131,55 +128,136 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <th scope="row">Sample 1</th>
+                          <th scope="row">p257_201</th>
                           <td>
-                            <audio controls>
-                              <source src="./audio/en2cn/src/f1.wav" type="audio/wav" />
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/noisy-narrowband/p257_201.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                           <td>
-                            <audio controls>
-                              <source src="./audio/en2cn/tgt/f1.wav" type="audio/wav" />
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/UEE/p257_201.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                           <td>
-                            <audio controls>
-                              <source src="./audio/en2cn/monolingual/f1.wav" type="audio/wav" />
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/MTL-MBE/p257_201.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                           <td>
-                            <audio controls>
-                              <source src="./audio/en2cn/bilingual/f1.wav" type="audio/wav" />
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/clean-wideband/p257_201.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                         </tr>
                         <tr>
-                          <th scope="row">Sample 2</th>
+                          <th scope="row">p257_204</th>
                           <td>
-                            <audio controls>
-                              <source src="./audio/en2cn/src/f2.wav" type="audio/wav" />
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/noisy-narrowband/p257_204.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                           <td>
-                            <audio controls>
-                              <source src="./audio/en2cn/tgt/f2.wav" type="audio/wav" />
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/UEE/p257_204.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                           <td>
-                            <audio controls>
-                              <source src="./audio/en2cn/monolingual/f2.wav" type="audio/wav" />
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/MTL-MBE/p257_204.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                           <td>
-                            <audio controls>
-                              <source src="./audio/en2cn/bilingual/f2.wav" type="audio/wav" />
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/clean-wideband/p257_204.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">p232_300</th>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/noisy-narrowband/p232_300.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/UEE/p232_300.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/MTL-MBE/p232_300.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/clean-wideband/p232_300.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">p232_305</th>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/noisy-narrowband/p232_305.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/UEE/p232_305.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/MTL-MBE/p232_305.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/clean-wideband/p232_305.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">p232_306</th>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/noisy-narrowband/p232_306.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/UEE/p232_306.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/MTL-MBE/p232_306.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls controlsList="nodownload">
+                              <source src="./audio/clean-wideband/p232_306.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
@@ -334,12 +412,12 @@
     <div class="container">
       <p class="text-center">
         <small>
-          Cross-lingual Voice Conversion
+          Bandwidth Extension
           <br>
-          Cross-lingual Voice Conversion with Bilingual Phonetic Posteriorgram and Average Modeling
+          Multi-task Learning for <br> End-to-end Noise-robust Bandwidth Extension
           <br>
-          <a href="https://www.researchgate.net/profile/Yi_Zhou184" class="text-light"><strong>Yi Zhou</strong></a> |
-          E0154158@u.nus.edu
+          <a href="" class="text-light"><strong>Nana Hou</strong></a> |
+          nana001@e.ntu.edu.sg
         </small>
       </p>
     </div>
